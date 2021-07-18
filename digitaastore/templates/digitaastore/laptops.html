@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>laptops</title>
+  </head>
+  <body>
+    {% block content %} {% for laptop in object_list %}
+    
+      <div class=properties style="width:50vw">
+          <h2 style="color: green;">{{ laptop.name}}</h2>
+          <h3>{{ laptop.processor}}</h3>
+          <h3>{{ laptop.camera}}</h3>
+          <h3>{{ laptop.memory}}</h3>
+          <h3>{{ laptop.storage}}</h3>
+          <h3>{{ laptop.display}}</h3>
+          <h3>{{ laptop.price}}</h3>
+      </div>
+      <img src="{{laptop.pics}}" alt="">
+    
+    {% endfor %} {% endblock content %}
+  </body>
+</html>
+
+<style>
+body{
+    display: flex;
+    
+}
+</style>
