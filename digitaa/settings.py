@@ -26,8 +26,7 @@ SECRET_KEY = 'django-insecure-#&!@@oxp5in3a3p$a7+n08dcbo0+%(#g6+h9d3kqx(t4as8&c1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['blooming-oasis-37492.herokuapp.com',
-                 '127.0.0.1']
+ALLOWED_HOSTS = ['muni-portfolio.herokuapp.com']
 
 
 # Application definition
